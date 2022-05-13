@@ -18,6 +18,9 @@ void setup() {
 }
 
 void draw() {
+  if (keyPressed) {
+    saveFrame("screenshot.png");
+  }
   flowfield.update();
   
   if (debug) flowfield.display();
